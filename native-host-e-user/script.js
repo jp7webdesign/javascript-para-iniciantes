@@ -32,9 +32,35 @@
 // console.log(fruta.lastIndexOf("Ba"));
 // -----
 
-const listaPrecos = ["R$ 99", "R$ 199", "R$ 1200"];
+// const listaPrecos = ["R$ 99", "R$ 199", "R$ 1200"];
 
-listaPrecos.forEach((preco) => {
-  console.log(preco.padStart(10, "."));
-  console.log(preco.padEnd(10, "."));
-});
+// listaPrecos.forEach((preco) => {
+//   console.log(preco.padStart(10, "."));
+//   console.log(preco.padEnd(10, "."));
+// });
+// -----
+
+const frase2 = "Tá";
+console.log(frase2.repeat(5));
+
+let listaItens = "Camisas Bonés Calças Bermudas Vestidos Saias";
+listaItens = listaItens.replace(/[ ]+/g, ", ");
+console.log(listaItens);
+
+const arrayLista = listaItens.split(", ");
+console.log(arrayLista);
+
+const htmlText = "<div>O melhor item</div><div>A melhor lista</div>";
+const htmlArray = htmlText.split("div");
+console.log(htmlText);
+console.log(htmlArray);
+
+const sexo1 = "Feminino";
+console.log(sexo1.toLowerCase());
+console.log(sexo1.toUpperCase());
+
+const valor = " R$ 23.00 ";
+console.log(valor);
+console.log(valor.trim());
+console.log(valor.trimStart());
+console.log(valor.trimEnd());
