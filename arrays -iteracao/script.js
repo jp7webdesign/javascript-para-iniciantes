@@ -79,8 +79,53 @@
 // console.log(temUva);
 
 //every testa se os elementos passam pelo teste e retorna true our false
-const numeros = [6, 43, 22, 88, 101, 29];
-const maiorQue3 = numeros.every(n => n >= 6);
-console.log(maiorQue3);
+// const numeros = [6, 43, 22, 88, 101, 29];
+// const maiorQue3 = numeros.every(n => n >= 6);
+// console.log(maiorQue3);
 
-// iteração 3
+// findIndex e find
+// const frutas = ['Banana', 'Pêra', 'Uva', 'Maça'];
+// const buscaUva = frutas.findIndex((fruta) => {
+//   return fruta === 'Uva';
+// });
+// console.log(buscaUva);
+
+// const numeros = [6, 43, 22, 88, 101, 29];
+// const buscaMaior45 = numeros.find(x => x > 45);
+// console.log(buscaMaior45);
+
+// filter
+// const frutas = ['Banana', undefined, null, '', 'Uva', 0, 'Maça'];
+// const arrayLimpa = frutas.filter((fruta) => {
+//   return fruta;
+// });
+// console.log(arrayLimpa);
+
+// const numeros = [6, 43, 88, 101, 29];
+// const buscaMaior45 = numeros.filter(x => x > 45);
+// console.log(buscaMaior45);
+
+const aulas = [
+  {
+    nome: 'HTML 1',
+    min: 15
+  },
+  {
+    nome: 'HTML 2',
+    min: 10
+  },
+  {
+    nome: 'CSS 1',
+    min: 20
+  },
+  {
+    nome: 'JS 1',
+    min: 25
+  },
+]
+
+const aulasMaiores = aulas.filter((aula) => { 
+  return aula.min > 15;
+});
+// [{nome: 'CSS 1', min: 20}, {nome: 'JS 1', min: 25}]
+console.log(aulasMaiores);
